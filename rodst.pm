@@ -98,18 +98,18 @@ exist $rod : rodstv(kto: $x, komu: $y),
 =>
       if $y.sex = male 
       then   
-           OutText( $win1, 50, $wy, ToString($y.name)+ "  brother "+ ToString($x.name) );
+           OutText( $win1, 50, $wy, ToString($y.name)+ " brother of "+ ToString($x.name) );
       else 
-           OutText( $win1, 50, $wy,ToString($y.name)+ "  sister "+ToString($x.name) );
+           OutText( $win1, 50, $wy,ToString($y.name)+ " sister of "+ToString($x.name) );
        end; 
       
       $wy := $wy + 15;
 
       if $x.sex = male
       then  
-           OutText( $win1, 50, $wy, ToString($x.name) + "  brother " + ToString($y.name) );
+           OutText( $win1, 50, $wy, ToString($x.name) + " brother of " + ToString($y.name) );
       else  
-           OutText( $win1, 50, $wy, ToString($x.name)+ "  sister " + ToString($y.name) );
+           OutText( $win1, 50, $wy, ToString($x.name)+ " sister of " + ToString($y.name) );
       end; 
       $wy := $wy + 30; 
 finish
@@ -122,18 +122,18 @@ rule Spouse
 =>
          if $x.sex = male 
          then   
-             OutText( $win1, 50, $wy, ToString($x.name) + "  husband " + ToString($y.name) );
+             OutText( $win1, 50, $wy, ToString($x.name) + " husband of " + ToString($y.name) );
          else 
-             OutText( $win1, 50, $wy, ToString($x.name) + "  wife " + ToString($y.name) );
+             OutText( $win1, 50, $wy, ToString($x.name) + " wife of " + ToString($y.name) );
          end; 
 
          $wy := $wy + 15;   
 
          if $y.sex = male
          then  
-             OutText( $win1, 50, $wy, ToString($y.name) + "  husband " + ToString($x.name) );
+             OutText( $win1, 50, $wy, ToString($y.name) + " husband of " + ToString($x.name) );
          else  
-             OutText( $win1, 50, $wy, ToString($y.name) + "  wife " + ToString($x.name) );
+             OutText( $win1, 50, $wy, ToString($y.name) + " wife of " + ToString($x.name) );
          end; 
 
       $wy := $wy + 30;   
