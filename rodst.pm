@@ -151,7 +151,7 @@ exist $rod : rodstv(kto: $x, komu: $y ),
          then   
              OutText( $win1, 50, $wy, ToString($x.name) + "  zyat' (son-in-law) of " + ToString($y.name) );
          else  
-             OutText( $win1, 50, $wy, ToString($y.name) + "  nevestka (daughter-in-law) of " + ToString($x.name) );
+             OutText( $win1, 50, $wy, ToString($x.name) + "  nevestka (daughter-in-law) of " + ToString($y.name) );
 	 end;
 
          $wy := $wy + 15;   
