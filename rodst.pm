@@ -150,6 +150,8 @@ exist $rod : rodstv(kto: $x, komu: $y ),
          if $x.sex = male 
          then   
              OutText( $win1, 50, $wy, ToString($x.name) + "  zyat' (son-in-law) of " + ToString($y.name) );
+         else  
+             OutText( $win1, 50, $wy, ToString($y.name) + "  nevestka (daughter-in-law) of " + ToString($x.name) );
 	 end;
 
          $wy := $wy + 15;   
